@@ -2,7 +2,7 @@ image: paciolanhub/alpine-node-dev:10.15.3c
 
 variables:
   REPO_URL: gitlabdev.paciolan.info
-  GITHUB_URL: https://github.com/Paciolan/eslint-config.git
+  GITHUB_URL: https://github.com/Paciolan/eslint-config-react.git
 
 stages:
   - build

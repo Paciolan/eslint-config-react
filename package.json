@@ -20,7 +20,7 @@
     "lint": "eslint ."
   },
   "dependencies": {
-    "@paciolan/eslint-config": "^1.0.5"
+    "@paciolan/eslint-config": "^1.0.7"
   },
   "devDependencies": {
     "@commitlint/cli": "^7.6.1",

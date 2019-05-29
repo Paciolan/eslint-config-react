@@ -1,0 +1,53 @@
+{
+  "name": "@paciolan/eslint-config-react",
+  "version": "0.0.0-semantic-release",
+  "description": "",
+  "author": "Paciolan",
+  "license": "MIT",
+  "keywords": [
+    "eslint",
+    "eslint-config",
+    "prettier",
+    "react"
+  ],
+  "main": "index.js",
+  "repository": {
+    "type": "ssh",
+    "url": "git@gitlabdev.paciolan.info:development/library/javascript/paciolan-eslint-config-react.git"
+  },
+  "scripts": {
+    "cz": "git-cz",
+    "lint": "eslint ."
+  },
+  "dependencies": {
+    "@paciolan/eslint-config": "^1.0.5"
+  },
+  "devDependencies": {
+    "@commitlint/cli": "^7.6.1",
+    "@commitlint/config-conventional": "^7.6.0",
+    "babel-eslint": "^10.0.1",
+    "eslint": "^5.16.0",
+    "eslint-config-prettier": "^4.3.0",
+    "eslint-plugin-babel": "^5.3.0",
+    "eslint-plugin-prettier": "^3.1.0",
+    "eslint-plugin-react": "^7.13.0",
+    "git-cz": "^3.0.1",
+    "husky": "^2.3.0",
+    "prettier": "^1.17.1"
+  },
+  "peerDependencies": {
+    "babel-eslint": ">=10",
+    "eslint": ">=5",
+    "eslint-config-prettier": ">=4",
+    "eslint-plugin-babel": ">=5",
+    "eslint-plugin-prettier": ">=3",
+    "eslint-plugin-react": ">=7",
+    "prettier": ">=1"
+  },
+  "husky": {
+    "hooks": {
+      "commit-msg": "commitlint -E HUSKY_GIT_PARAMS",
+      "pre-commit": "npm run lint"
+    }
+  }
+}
